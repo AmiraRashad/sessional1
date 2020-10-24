@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pacific Northwest Sports News </title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Abadi, Helvetica, sans-serif;
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color:white;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+</style>
+
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">HOME</a>
+  <a href="SEAHAWK.html">SEAHAWK</a>
+  <a href="MARINES.html"> MARINES</a>
+  <a href="COUGARS.html">COUGARS</a>
+  <a href="TRAIL.html">TRAIL BLAZERS</a>	
+  <a href="KRAKEN.html">KRAKEN</a> 
+  <a href="GONZAGA.html">GONZAGA</a> 
+  <a href="ABOUT.html">ABOUT</a> 
+
+</div>
+<br><br>
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+
+img {vertical-align: middle;}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: pink;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgb(230, 30, 69);
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: pink;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgb(230, 30, 69);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+</style>
+</head>
+<br>
+
+<body>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+ 
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="1.jpeg" width="600" height="400">
+  </div>
+
+
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="3.jpeg" width="600" height="400">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="4.jpeg" width="600" height="400">
+
+  </div>  
+<div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="5.jpeg" width="600" height="400">
+
+  </div> 
+ <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="6.jpeg" width="600" height="400">
+
+  </div> 
+ <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="7.jpeg" width="600" height="400">
+
+  </div>  
+<div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="8.jpeg" width="600" height="400">
+
+  </div> 
+ <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="9.jpeg" width="600" height="400">
+  </div> 
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="10.jpeg" width="600" height="400"> 
+  </div>  
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+ <span class="dot" onclick="currentSlide(4)"></span>
+ <span class="dot" onclick="currentSlide(5)"></span>
+ <span class="dot" onclick="currentSlide(6)"></span>
+ <span class="dot" onclick="currentSlide(7)"></span>
+ <span class="dot" onclick="currentSlide(8)"></span>
+ <span class="dot" onclick="currentSlide(9)"></span>
+ <span class="dot" onclick="currentSlide(10)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</html>
+
+
+
+
+
+
